@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
+  <title>Sign in & Sign up Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin">
+        <form class="form" action="{% url 'login' %}" method="post" autocomplete="off">
+          {% csrf_token %}
+          <div class="control">
+            <h1>Sign In</h1>
+          </div>
+          <div class="control block-cube block-input">
+            
+            <input name="username" type="text" placeholder="Username" >
+          </div>
+          <div class="control block-cube block-input">
+            <input name="password" type="password" placeholder="Password">
+          </div>
+          <button class="btn block-cube block-cube-hover" type="submit">
+            <div class="bg-top">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg-right">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="text">Log In</div>
+          </button>
+          <div class="credits">
+            <a href="https://codepen.io/marko-zub/" target="_blank">My other codepens</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
