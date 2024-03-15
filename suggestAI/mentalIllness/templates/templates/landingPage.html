@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            color: #212121;
+            background-color: #fff;
+            font-family: monospace, serif;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+        .body2 {
+            color: #212121;
+            background-color: #fff;
+            font-family: monospace, serif;
+            letter-spacing: 0.05em;
+        }
+        h1 {
+            font-size: 23px;
+            color: #212121;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            /* background-color: #f8f9fa; */
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .content .card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            width: 25%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        /* .content .card:hover {
+            transform: translateY(-10px);
+        } */
+        .content .card h2 {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .content .card p {
+            margin: 0;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        .about, .stats, .testimonials {
+            margin-bottom: 50px;
+        }
+
+        .about h2, .stats h2, .testimonials h2 {
+            color: #007bff;
+        }
+
+        .stats ul {
+            padding-left: 20px;
+        }
+        .centered-link {
+            font-size: 24px;
+            text-align: center;
+            /* text-decoration: none; */
+            color: #007bff;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: #007bff;
+            /* text-transform: uppercase; */
+            letter-spacing: 2px;
+            border: 2px solid #007bff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+        .green-button123{
+            border: 1px solid transparent;
+            padding: 5px 16px;
+            display: inline-block;
+            min-width: 84px;
+            font-size: 14px;
+            text-align: center;
+            /* transition: color .05s ease-in-out, background-color .05s; */
+            line-height: 1.45;
+            font-weight: 600;
+            white-space: nowrap;
+            border-radius: 4px;
+            vertical-align: middle;
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        .green-button{
+            background-color: #4CAF50; /* Green */
+            border-radius: 4px;
+            color: white;
+            padding: 5px 16px;
+            text-align: center;
+            min-width: 84px;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 1.45;
+            font-weight: 800;
+            font-size: 20px;
+            white-space: nowrap;
+            margin: 4px 2px;
+            cursor: pointer;
+            white-space: nowrap;
+            /* border-radius: 5px; */
+            border-radius: 8%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">MindGuard+
+        </div>
+            <div class="content">
+                <div class="card" >
+                    <main>
+                        <canvas id="medicalChart" width="400" height="350"></canvas>
+                    </main>
+                    <script>
+                        const medicalData = {
+                            labels: ['Hypertension', 'Diabetes', 'Heart Disease', 'Asthma'],
+                            datasets: [{
+                                label: 'Number of Patients',
+                                data: [120, 90, 80, 60],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.5)',
+                                    'rgba(54, 162, 235, 0.5)',
+                                    'rgba(255, 206, 86, 0.5)',
+                                    'rgba(75, 192, 192, 0.5)'
+                                ],
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        };
+            
+                    // Configuration for the chart
+                        const chartConfig = {
+                            type: 'bar',
+                            data: medicalData,
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
+                                    }
+                                }
+                            }
+                        };
+            
+                        // Render the chart
+                        const ctx = document.getElementById('medicalChart').getContext('2d');
+                        const medicalChart = new Chart(ctx, chartConfig);
+                    </script>
+                </div>
+                <div class="card" >
+                    <main>
+                        <canvas id="ageChart" width="400" height="350"></canvas>
+                    </main>
+            
+                    <script>
+                        // Sample data for age distribution
+                        const ageData = {
+                            labels: ['0-18', '19-30', '31-45', '46-60', '61+'],
+                            datasets: [{
+                                label: 'Number of Patients',
+                                data: [50, 70, 90, 80, 40],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.5)',
+                                    'rgba(54, 162, 235, 0.5)',
+                                    'rgba(255, 206, 86, 0.5)',
+                                    'rgba(75, 192, 192, 0.5)'
+                                ],
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        };
+            
+                        // Configuration for the chart
+                        const chartConfig1 = {
+                            type: 'bar',
+                            data: ageData,
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
+                                    }
+                                }
+                            }
+                        };
+                
+                        // Render the chart
+                        const ctx1 = document.getElementById('ageChart').getContext('2d');
+                        const ageChart = new Chart(ctx1, chartConfig1);
+                    </script>
+                </div>
+            
+                <div class="card" >
+                    <main>
+                        <canvas id="demographicsChart" width="400" height="350"></canvas>
+                    </main>
+                
+                    <script>
+                        // Sample data for patient demographics
+                        const demographicsData = {
+                            labels: ['Male', 'Female', 'Other'],
+                            datasets: [{
+                                label: 'Patient Demographics',
+                                data: [60, 35, 5], // percentages
+                                backgroundColor: [
+                                    'rgba(54, 162, 235, 0.5)',
+                                    'rgba(255, 99, 132, 0.5)',
+                                    'rgba(255, 206, 86, 0.5)'
+                                ],
+                                borderColor: [
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(255, 206, 86, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        };
+                
+                        // Configuration for the chart
+                        const chartConfig2 = {
+                            type: 'pie',
+                            data: demographicsData,
+                            options: {}
+                        };
+                
+                        // Render the chart
+                        const ctx2 = document.getElementById('demographicsChart').getContext('2d');
+                        const demographicsChart = new Chart(ctx2, chartConfig2);
+                    </script>
+                </div>
+            </div>
+    </div>
+        <div class="container">
+            <a href="#" class="green-button">Try Now</a>
+        </div>     
+    <div class="body2">
+        <main>
+            <section class="about">
+                <h2>Our Mission</h2>
+                <p>At Accuracy Psychiatric Diagnosis, our mission is to provide accurate and reliable psychiatric assessments to ensure proper diagnosis and treatment planning.</p>
+            </section>
+            <section class="stats">
+                <h2>Accuracy Statistics</h2>
+                <p>Our team of experienced psychiatrists has achieved a high level of accuracy in diagnosing various mental health conditions. Based on our data:</p>
+                <ul>
+                    <li>Accuracy rate for major depressive disorder: 95%</li>
+                    <li>Accuracy rate for generalized anxiety disorder: 90%</li>
+                    <li>Accuracy rate for bipolar disorder: 85%</li>
+                    <!-- Add more statistics as needed -->
+                </ul>
+            </section>
+            <section class="testimonials">
+                <h2>Testimonials</h2>
+                <blockquote>
+                    "I was struggling with undiagnosed bipolar disorder for years until I came to Accuracy Psychiatric Diagnosis. Their accurate diagnosis and personalized treatment plan have changed my life for the better."
+                    <cite>- John Doe</cite>
+                </blockquote>
+                <!-- Add more testimonials as needed -->
+            </section>
+        </main>
+    </div>
+</body>
+        
+        
+            
+
+
+            
