@@ -1,0 +1,128 @@
+body {
+  color: #212121;
+  background-color: #fff;
+  font-family: monospace, serif;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+/* .body2 {
+  color: #212121;
+  background-color: #fff;
+  font-family: monospace, serif;
+  letter-spacing: 0.05em;
+} */
+h1 {
+  font-size: 23px;
+  color: #212121;
+}
+.navbar {
+  align-items: center;
+  /* background-color: #007bff; */
+  border-bottom: 1px solid #cdd1dc;
+  box-sizing: border-box;
+  display: flex;
+  font-family: inherit;
+  height: calc(4rem + 1px);
+  padding: 0 3rem;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px 20px;
+  /* background-color: #333; Added background color to navbar links */ 
+  border-radius: 5px;
+  right: 0;
+  top: 0;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #007bff; 
+  color:  #fff;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cards-container {
+  width: 40%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card-header {
+  background-color: #007bff; /* Added background color to card header */
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 10px;
+  width: var(--progress);
+  background-color: var(--color);
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.details-container {
+  width: 60%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #007bff;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+}
