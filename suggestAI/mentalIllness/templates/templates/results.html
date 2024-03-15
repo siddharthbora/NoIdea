@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+    <style>
+        body {
+            color: #212121;
+            background-color: #fff;
+            font-family: monospace, serif;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: #007bff;
+            letter-spacing: 2px;
+            border: 2px solid #007bff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+        .output-container {
+            margin-top: 50px;
+            text-align: left;
+        }
+        .output-item {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">MindGuard+</div>
+    </div>
+    <div class="container">
+        <h1 class="header">Results</h1>
+        <div class="output-container">
+            <div class="output-item">
+                <strong>ICD-10 Code:</strong>
+                <p>{{ icd_10_code }}</p>
+            </div>
+            <div class="output-item">
+                <strong>Treatment Recommended:</strong>
+                <p>{{ recommended_treatment }}</p>
+            </div>
+            <div class="output-item">
+                <strong>Problem Summary:</strong>
+                <p>{{ problem_summary }}</p>
+            </div>
+            <div class="output-item">
+                <strong>Problem Category:</strong>
+                <p>{{ problem_category }}</p>
+            </div>
+            <div class="output-item">
+                <strong>Psychological Category:</strong>
+                <p>{{ psychological_category }}</p>
+            </div>
+                
+        </div>
+    </div>
+</body>
+</html>

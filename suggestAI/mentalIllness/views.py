@@ -7,6 +7,8 @@ from .models import Doctors
 import pandas as pd
 from scipy.sparse import hstack
 import joblib
+import requests
+
 def index(request ):
     return HttpResponse("hello")
 def reg(request):
@@ -46,7 +48,8 @@ def reg(request):
 def home(request):
     return render(request, 'templates/landingPage.html')
 
-
+def listing(request):
+    return render(request, 'templates/ListingPage.html')
 
 def login(request):
     if request.method == 'POST':
@@ -82,6 +85,13 @@ def predict_input( input_tuple):
     return icd10_prediction, treatment_prediction
 
 test = joblib.load('/Users/siddharth/Desktop/Hackathon DI/suggestAI/mentalIllness/m2.pkl')
+def make_predictions_on_incoming_dataset(incoming_dataset, pipeline):
+    incoming_data = pd.DataFrame([incoming_dataset])
+    incoming_data['Problem Description'] = incoming_data['problem_description']
+    incoming_data.drop(columns=['problem_description'], inplace=True)
+
+    predictions = pipeline.predict(incoming_data['Problem Description'])
+    return predictions
 
 def predict(request):
     if request.method == 'POST':
@@ -89,14 +99,39 @@ def predict(request):
         age = data['age']
         gender = data['gender']
         problem_description = data['problem_description']
-        op1=test.predict({"age":age,"gender":gender,"problem_description":problem_description})
-        op3=op1
-        op1=tuple(op1[0][0:3])
+        op1 = make_predictions_on_incoming_dataset({"age":age,"gender":gender,"problem_description":problem_description}, test)
+        op3 = op1
+        op1 = tuple(op1[0][0:3])
         icd10_pred, treatment_pred = predict_input(op1)
         print(icd10_pred)
         print(treatment_pred)
-        return HttpResponse(icd10_pred+','+icd10_pred+str(op3))
-    return render(request, 'templates/inputPage.html')
+        api_url = 'http://icd10api.com/'
+        params = {
+            's': 'F42.2',
+            'desc': 'short',
+            'r': 'json'
+        }
+        # response = requests.get(api_url, params=params)
+        # if response.status_code == 200:
+        #     # Extract relevant data from the response
+        #     api_data = response.json()
+        #     # return (HttpResponse(str(api_data)))
+        # # Render the results template with dynamic data
+        return render(request, 'templates/results.html', {
+            'icd_10_code': icd10_pred,
+            'recommended_treatment': treatment_pred,
+            'problem_summary': op1[0],
+            'problem_category': op1[1],
+            'psychological_category': op1[2],
+        })
+
+        # Redirect to the results page
+        # return redirect('results')  # You can uncomment this line if you want to redirect
+        
+        # If you want to pass data through redirect, you can use query parameters
+        # return redirect(f'/results/?icd_10_code={icd10_pred}&recommended_treatment={treatment_pred}&problem_summary={op1[0]}&problem_category={op1[1]}&psychological_category={op1[2]}')
+    
+    return render(request, 'templates/inputPage.html') 
     
         
     

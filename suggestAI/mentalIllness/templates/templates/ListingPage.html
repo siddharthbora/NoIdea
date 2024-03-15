@@ -1,18 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product Listing Page</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="{% static '/css/listingPage.css' %}">
 </head>
 <body>
 
   <nav class="navbar">
     <ul>
       <li><a class="logo" href="ListingPage.html">MindGuard+</a></li>
-      <li><a href="landingPage.html">Home</a></li>
-      <li><a href="inputPage.html">Input Page</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/home">Input Page</a></li>
     </ul>
   </nav>
 
@@ -67,6 +68,6 @@
   </div>
 
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <script src="script.js"></script>
+  <script src="{% static '/js/script.js' %}"></script>
 </body>
 </html>
