@@ -1,0 +1,96 @@
+Age,Gender,Problem Description,Problem Summary,Problem Category,Psychological Category,ICD-10,Treatment Provided,Success/Failure,Precision (%)
+28,Male,_RARE_,Obsessive-Compulsive Disorder,_RARE_,_RARE_,F32.9,Psychotherapy,Success,75%
+41,Male,_RARE_,Major Depression,Depression,Anxiety,F42.2,Cognitive Therapy,_RARE_,65%
+37,Male,_RARE_,_RARE_,Depression,Anxiety,F43.10,Cognitive Therapy,Success,65%
+28,Male,_RARE_,Post-Traumatic Stress Disorder,Obsessive-Compulsive Disorder,Anxiety,_RARE_,Psychotherapy,_RARE_,70%
+28,Female,_RARE_,Post-Traumatic Stress Disorder,_RARE_,Mood Disorders,F41.1,Antidepressant Medication,_RARE_,70%
+34,Male,_RARE_,Major Depression,Post-Traumatic Stress Disorder,_RARE_,F42.2,Cognitive Therapy,Success,65%
+40,Male,_RARE_,_RARE_,Obsessive-Compulsive Disorder,Mood Disorders,F43.10,Exposure Therapy,_RARE_,70%
+30,Male,_RARE_,Post-Traumatic Stress Disorder,Obsessive-Compulsive Disorder,_RARE_,F42.2,Cognitive Therapy,Success,70%
+28,Male,_RARE_,Major Depression,_RARE_,Anxiety,F43.10,Exposure Therapy,_RARE_,_RARE_
+38,Male,_RARE_,Generalized Anxiety Disorder,Anxiety Disorders,Anxiety,F43.10,_RARE_,_RARE_,_RARE_
+31,Male,_RARE_,Major Depression,Obsessive-Compulsive Disorder,Anxiety,F43.10,Antidepressant Medication,_RARE_,70%
+28,Male,_RARE_,_RARE_,Obsessive-Compulsive Disorder,Anxiety,F42.2,Psychotherapy,Success,75%
+33,Female,_RARE_,Obsessive-Compulsive Disorder,Post-Traumatic Stress Disorder,_RARE_,_RARE_,_RARE_,Success,70%
+32,Male,_RARE_,_RARE_,_RARE_,Anxiety,F42.2,Trauma-Focused Therapy,Success,70%
+28,Male,_RARE_,Obsessive-Compulsive Disorder,Post-Traumatic Stress Disorder,_RARE_,F42.2,Antidepressant Medication,Success,70%
+28,Female,_RARE_,Post-Traumatic Stress Disorder,_RARE_,Anxiety,F32.9,Antidepressant Medication,Success,75%
+42,Female,_RARE_,Obsessive-Compulsive Disorder,_RARE_,Mood Disorders,F41.1,Cognitive Therapy,_RARE_,65%
+30,Male,_RARE_,Post-Traumatic Stress Disorder,Obsessive-Compulsive Disorder,Anxiety,_RARE_,Exposure Therapy,Success,75%
+41,Male,_RARE_,Obsessive-Compulsive Disorder,Obsessive-Compulsive Disorder,Mood Disorders,F43.10,Exposure Therapy,Success,65%
+32,Female,_RARE_,_RARE_,_RARE_,_RARE_,F42.2,Cognitive Therapy,_RARE_,65%
+28,Male,_RARE_,Post-Traumatic Stress Disorder,Anxiety Disorders,Mood Disorders,F32.9,Trauma-Focused Therapy,Success,70%
+28,Male,_RARE_,Obsessive-Compulsive Disorder,Depression,Anxiety,_RARE_,_RARE_,_RARE_,65%
+28,Male,_RARE_,Post-Traumatic Stress Disorder,Anxiety Disorders,Anxiety,F42.2,Exposure Therapy,_RARE_,_RARE_
+28,Female,_RARE_,_RARE_,Obsessive-Compulsive Disorder,_RARE_,F32.9,Cognitive Therapy,Success,75%
+28,Male,_RARE_,_RARE_,Anxiety Disorders,Mood Disorders,F42.2,Antidepressant Medication,_RARE_,_RARE_
+36,Female,_RARE_,Major Depression,_RARE_,Mood Disorders,_RARE_,Antidepressant Medication,Success,70%
+40,Male,_RARE_,_RARE_,Obsessive-Compulsive Disorder,Mood Disorders,F41.1,Antidepressant Medication,Success,_RARE_
+42,Male,_RARE_,Post-Traumatic Stress Disorder,Depression,Anxiety,F41.1,Psychotherapy,Success,65%
+38,Male,_RARE_,Obsessive-Compulsive Disorder,_RARE_,Anxiety,F41.1,_RARE_,Success,65%
+39,Male,_RARE_,Generalized Anxiety Disorder,Anxiety Disorders,Mood Disorders,F32.9,Cognitive Therapy,Success,75%
+28,Female,_RARE_,Obsessive-Compulsive Disorder,Anxiety Disorders,_RARE_,F43.10,Antidepressant Medication,Success,70%
+40,Male,_RARE_,Obsessive-Compulsive Disorder,_RARE_,Anxiety,F42.2,Cognitive Therapy,Success,_RARE_
+40,Female,_RARE_,_RARE_,_RARE_,Anxiety,F41.1,Exposure Therapy,_RARE_,65%
+28,Male,_RARE_,Obsessive-Compulsive Disorder,_RARE_,_RARE_,_RARE_,Psychotherapy,_RARE_,70%
+33,Male,_RARE_,_RARE_,_RARE_,_RARE_,F43.10,Psychotherapy,Success,65%
+39,Male,_RARE_,Generalized Anxiety Disorder,_RARE_,Mood Disorders,F42.2,Cognitive Therapy,_RARE_,_RARE_
+28,Male,_RARE_,Major Depression,Obsessive-Compulsive Disorder,Mood Disorders,_RARE_,Cognitive Therapy,_RARE_,75%
+28,Male,_RARE_,Generalized Anxiety Disorder,Anxiety Disorders,_RARE_,_RARE_,Trauma-Focused Therapy,_RARE_,65%
+35,Female,_RARE_,Post-Traumatic Stress Disorder,Depression,Anxiety,F42.2,Cognitive Therapy,_RARE_,65%
+41,Female,_RARE_,Obsessive-Compulsive Disorder,Depression,Mood Disorders,F43.10,Antidepressant Medication,Success,70%
+37,Female,_RARE_,Post-Traumatic Stress Disorder,Anxiety Disorders,Mood Disorders,F42.2,Exposure Therapy,Success,70%
+28,Female,_RARE_,_RARE_,Obsessive-Compulsive Disorder,_RARE_,F43.10,Exposure Therapy,_RARE_,75%
+31,Male,_RARE_,Obsessive-Compulsive Disorder,Post-Traumatic Stress Disorder,_RARE_,F41.1,Exposure Therapy,Success,_RARE_
+40,Male,_RARE_,_RARE_,Depression,Anxiety,_RARE_,Antidepressant Medication,_RARE_,65%
+40,Male,_RARE_,Obsessive-Compulsive Disorder,Depression,Mood Disorders,_RARE_,Cognitive Therapy,Success,70%
+40,Female,_RARE_,Major Depression,Obsessive-Compulsive Disorder,Anxiety,F41.1,Psychotherapy,_RARE_,75%
+40,Male,_RARE_,_RARE_,Obsessive-Compulsive Disorder,_RARE_,F41.1,Cognitive Therapy,_RARE_,_RARE_
+41,Female,_RARE_,Major Depression,_RARE_,_RARE_,_RARE_,Cognitive Therapy,_RARE_,_RARE_
+28,Female,_RARE_,Obsessive-Compulsive Disorder,Depression,Anxiety,F41.1,Antidepressant Medication,Success,70%
+33,Female,_RARE_,_RARE_,Post-Traumatic Stress Disorder,Anxiety,F41.1,_RARE_,Success,_RARE_
+28,Male,_RARE_,Obsessive-Compulsive Disorder,_RARE_,Anxiety,F42.2,Antidepressant Medication,_RARE_,65%
+40,Male,_RARE_,_RARE_,Post-Traumatic Stress Disorder,_RARE_,F42.2,_RARE_,_RARE_,_RARE_
+41,Male,_RARE_,Generalized Anxiety Disorder,Post-Traumatic Stress Disorder,Mood Disorders,F43.10,Antidepressant Medication,_RARE_,75%
+40,Male,_RARE_,Post-Traumatic Stress Disorder,Post-Traumatic Stress Disorder,_RARE_,F41.1,_RARE_,_RARE_,70%
+28,Male,_RARE_,Obsessive-Compulsive Disorder,Anxiety Disorders,Mood Disorders,_RARE_,Cognitive Therapy,Success,65%
+28,Female,_RARE_,Post-Traumatic Stress Disorder,Anxiety Disorders,Anxiety,F43.10,Exposure Therapy,_RARE_,65%
+40,Male,_RARE_,Post-Traumatic Stress Disorder,Depression,Anxiety,F32.9,Cognitive Therapy,_RARE_,70%
+28,Female,_RARE_,Post-Traumatic Stress Disorder,Post-Traumatic Stress Disorder,_RARE_,F43.10,_RARE_,Success,70%
+30,Male,_RARE_,Obsessive-Compulsive Disorder,Anxiety Disorders,Mood Disorders,_RARE_,Exposure Therapy,Success,70%
+35,Male,_RARE_,_RARE_,Post-Traumatic Stress Disorder,_RARE_,_RARE_,_RARE_,Success,_RARE_
+30,Female,_RARE_,Obsessive-Compulsive Disorder,Obsessive-Compulsive Disorder,_RARE_,_RARE_,Psychotherapy,_RARE_,_RARE_
+37,Female,_RARE_,Generalized Anxiety Disorder,Post-Traumatic Stress Disorder,Mood Disorders,F41.1,Psychotherapy,Success,65%
+36,Male,_RARE_,Obsessive-Compulsive Disorder,Obsessive-Compulsive Disorder,Anxiety,_RARE_,Exposure Therapy,_RARE_,70%
+41,Male,_RARE_,_RARE_,_RARE_,_RARE_,_RARE_,Psychotherapy,_RARE_,65%
+40,Male,_RARE_,Obsessive-Compulsive Disorder,Post-Traumatic Stress Disorder,_RARE_,_RARE_,Antidepressant Medication,_RARE_,_RARE_
+38,Male,_RARE_,Major Depression,Anxiety Disorders,_RARE_,_RARE_,Cognitive Therapy,_RARE_,70%
+34,Female,_RARE_,Obsessive-Compulsive Disorder,_RARE_,Anxiety,F43.10,Trauma-Focused Therapy,Success,65%
+42,Male,_RARE_,Obsessive-Compulsive Disorder,Depression,_RARE_,_RARE_,Cognitive Therapy,Success,65%
+28,Female,_RARE_,_RARE_,Post-Traumatic Stress Disorder,Anxiety,F43.10,Trauma-Focused Therapy,Success,65%
+28,Male,_RARE_,Generalized Anxiety Disorder,Post-Traumatic Stress Disorder,Anxiety,F43.10,Exposure Therapy,Success,65%
+34,Female,_RARE_,Post-Traumatic Stress Disorder,Obsessive-Compulsive Disorder,Anxiety,F32.9,Antidepressant Medication,_RARE_,75%
+28,Female,_RARE_,Major Depression,_RARE_,_RARE_,F41.1,Cognitive Therapy,_RARE_,70%
+28,Male,_RARE_,_RARE_,Obsessive-Compulsive Disorder,_RARE_,F42.2,Exposure Therapy,_RARE_,75%
+35,Male,_RARE_,Obsessive-Compulsive Disorder,Depression,Anxiety,_RARE_,Exposure Therapy,_RARE_,65%
+28,Female,_RARE_,Generalized Anxiety Disorder,Depression,_RARE_,F41.1,Psychotherapy,Success,65%
+29,Female,_RARE_,_RARE_,Post-Traumatic Stress Disorder,Mood Disorders,_RARE_,Trauma-Focused Therapy,_RARE_,65%
+32,Female,_RARE_,Major Depression,Obsessive-Compulsive Disorder,Mood Disorders,F43.10,Antidepressant Medication,Success,75%
+31,Female,_RARE_,Generalized Anxiety Disorder,_RARE_,Anxiety,F32.9,_RARE_,_RARE_,_RARE_
+33,Female,_RARE_,Post-Traumatic Stress Disorder,Post-Traumatic Stress Disorder,Anxiety,F42.2,Antidepressant Medication,Success,70%
+38,Female,_RARE_,Post-Traumatic Stress Disorder,Obsessive-Compulsive Disorder,Anxiety,F43.10,Exposure Therapy,_RARE_,70%
+28,Male,_RARE_,_RARE_,Post-Traumatic Stress Disorder,_RARE_,F43.10,Trauma-Focused Therapy,Success,75%
+30,Female,_RARE_,Major Depression,Obsessive-Compulsive Disorder,Mood Disorders,F32.9,Exposure Therapy,_RARE_,70%
+38,Male,_RARE_,Generalized Anxiety Disorder,Obsessive-Compulsive Disorder,_RARE_,F41.1,_RARE_,Success,65%
+41,Female,_RARE_,Generalized Anxiety Disorder,_RARE_,Anxiety,F32.9,Exposure Therapy,_RARE_,70%
+41,Female,_RARE_,Generalized Anxiety Disorder,Depression,Anxiety,F32.9,_RARE_,Success,_RARE_
+41,Male,_RARE_,_RARE_,Post-Traumatic Stress Disorder,Anxiety,F43.10,_RARE_,Success,75%
+32,Male,_RARE_,_RARE_,Obsessive-Compulsive Disorder,Anxiety,F42.2,_RARE_,_RARE_,_RARE_
+28,Male,_RARE_,Post-Traumatic Stress Disorder,_RARE_,Anxiety,F43.10,Trauma-Focused Therapy,_RARE_,_RARE_
+29,Male,_RARE_,Major Depression,Obsessive-Compulsive Disorder,_RARE_,F32.9,Antidepressant Medication,Success,_RARE_
+28,Female,_RARE_,Post-Traumatic Stress Disorder,_RARE_,Mood Disorders,F43.10,Psychotherapy,Success,75%
+34,Female,_RARE_,Major Depression,Depression,_RARE_,F41.1,_RARE_,Success,70%
+41,Male,_RARE_,Major Depression,_RARE_,Anxiety,F32.9,Antidepressant Medication,Success,75%
+29,Female,_RARE_,Obsessive-Compulsive Disorder,Post-Traumatic Stress Disorder,Anxiety,F32.9,Exposure Therapy,_RARE_,75%
+28,Female,_RARE_,Post-Traumatic Stress Disorder,Obsessive-Compulsive Disorder,_RARE_,_RARE_,Antidepressant Medication,Success,70%
+41,Female,_RARE_,Generalized Anxiety Disorder,Post-Traumatic Stress Disorder,Mood Disorders,F43.10,Psychotherapy,Success,75%

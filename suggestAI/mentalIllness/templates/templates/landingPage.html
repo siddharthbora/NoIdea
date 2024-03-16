@@ -41,6 +41,7 @@
             margin-top: 20px;
         }
         .content .card {
+            border: 0.11px solid #0c71cfe6;
             background-color: #ffffff;
             border-radius: 5px;
             padding: 20px;
@@ -63,12 +64,33 @@
             padding: 20px;
             text-align: center;
         }
+        .about h2 {
+            margin-bottom: 10px;
+        }
+        .about p {
+            color: #333;
+        }
         .about, .stats, .testimonials {
-            margin-bottom: 50px;
+            background-color: #ffffff;
+            border: 0.11px solid #0c71cfe6;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* margin-bottom: 50px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 5px;
+            border-color:black ;
+            padding: 20px;
+            box-shadow: 2px 4px 6px rgba(0.1, 0.1, 0.1, 0.1);
+            transition: transform 0.3s;
+            text-align: center; */
+
         }
 
         .about h2, .stats h2, .testimonials h2 {
             color: #007bff;
+            width: 100% ;
         }
 
         .stats ul {
@@ -84,13 +106,30 @@
             font-size: 36px;
             font-weight: bold;
             color: #007bff;
-            /* text-transform: uppercase; */
             letter-spacing: 2px;
             border: 2px solid #007bff;
             padding: 10px 20px;
             border-radius: 10px;
             display: inline-block;
+            cursor: pointer;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+        }
+        .logoLink{
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+        .logo:hover{
+            background-color: #007bff; 
+            color:  #fff;
+            transform: scale(1.1);
+        }
+        .logoLink:hover{
+            background-color: #007bff; 
+            color:  #fff;
         }
         .green-button123{
             border: 1px solid transparent;
@@ -127,21 +166,25 @@
             /* border-radius: 5px; */
             border-radius: 8%;
         }
+        .no-bullet-points{
+            list-style-type: none;
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="logo">MindGuard+
+        <div class="logo">
+            <a class="logoLink" href="/">MindGuard+</a>
         </div>
             <div class="content">
                 <div class="card" >
                     <main>
-                        <canvas id="medicalChart" width="400" height="350"></canvas>
+                        <canvas id="medicalChart" width="400" height="400"></canvas>
                     </main>
                     <script>
                         const medicalData = {
-                            labels: ['Hypertension', 'Diabetes', 'Heart Disease', 'Asthma'],
+                            labels: ['Cognitive Disorders', 'Depression', 'Anxiety Disorders', 'Diagnosing Psychosis'],
                             datasets: [{
                                 label: 'Number of Patients',
                                 data: [120, 90, 80, 60],
@@ -269,36 +312,20 @@
         <div class="container">
             <a href="/predict" class="green-button">Try Now</a>
         </div>     
-    <div class="body2">
-        <main>
-            <section class="about">
-                <h2>Our Mission</h2>
-                <p>At Accuracy Psychiatric Diagnosis, our mission is to provide accurate and reliable psychiatric assessments to ensure proper diagnosis and treatment planning.</p>
-            </section>
-            <section class="stats">
+        <section class="about">
+            <h2>Our Mission</h2>
+            <p class="card">At Accuracy Psychiatric Diagnosis, our mission is to provide accurate and reliable psychiatric assessments to ensure proper diagnosis and treatment planning.</p>
+        </section>
+        <section class="stats">
                 <h2>Accuracy Statistics</h2>
                 <p>Our team of experienced psychiatrists has achieved a high level of accuracy in diagnosing various mental health conditions. Based on our data:</p>
-                <ul>
-                    <li>Accuracy rate for major depressive disorder: 95%</li>
-                    <li>Accuracy rate for generalized anxiety disorder: 90%</li>
-                    <li>Accuracy rate for bipolar disorder: 85%</li>
+                <ul class="no-bullet-points" >
+                    <li>Accuracy rate for major depressive disorder: 50%</li>
+                    <li>Accuracy rate for generalized anxiety disorder: 46%</li>
                     <!-- Add more statistics as needed -->
                 </ul>
-            </section>
-            <section class="testimonials">
-                <h2>Testimonials</h2>
-                <blockquote>
-                    "I was struggling with undiagnosed bipolar disorder for years until I came to Accuracy Psychiatric Diagnosis. Their accurate diagnosis and personalized treatment plan have changed my life for the better."
-                    <cite>- John Doe</cite>
-                </blockquote>
-                <!-- Add more testimonials as needed -->
-            </section>
-        </main>
-    </div>
+        </section>
+        
 </body>
+</html>
         
-        
-            
-
-
-            

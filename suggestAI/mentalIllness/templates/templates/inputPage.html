@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,13 +40,38 @@
             font-size: 36px;
             font-weight: bold;
             color: #007bff;
-            /* text-transform: uppercase; */
             letter-spacing: 2px;
             border: 2px solid #007bff;
             padding: 10px 20px;
             border-radius: 10px;
             display: inline-block;
+            cursor: pointer;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+        }
+        .logoLink{
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+        .logo:hover{
+            background-color: #007bff; 
+            color:  #fff;
+            transform: scale(1.1);
+        }
+        .logoLink:hover{
+            background-color: #007bff; 
+            color:  #fff;
+        }
+        #infoIcon {
+            display: none; /* Initially hidden */
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        #submitButton {
+            margin-top: 10px;
         }
         /* .container {
             width: 80%;
@@ -124,11 +150,12 @@
             margin-right: 10px;
         }
     </style>
-    <script src=""></script>
+    <script src="js/inputPage.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="logo">MindGuard+
+        <div class="logo">
+            <a class="logoLink" href="/">MindGuard+</a>
         </div>
     </div>
     <div class="container">
@@ -141,23 +168,22 @@
             </div>
             <div class="form-group">
                 <label for="radio">Gender:</label>
-                <input type="radio" id="male" name="gender" value="male">
+                <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
+                <input type="radio" id="female" name="gender" value="female" required>
                 <label for="female">Female</label>
             </div>
             <div class="form-group" >
                 <label for="message">Problem Description:</label>
-                <textarea name="problem_description" id="textarea" placeholder="Type here..." rows="6"></textarea>
+                <textarea name="problem_description" id="textarea" placeholder="Type here..." rows="6" required></textarea>
+                <div id="infoIcon">ℹ️</div>
+                <!-- <button id="submitButton" disabled>Submit</button> -->
                 <!-- <button class="speech"  id="startButton" onclick="startListening()">Start Listening</button>
                 <button  class="speech" id="stopButton" onclick="stopListening()">Stop Listening</button>
                 <button class="speech"  id="clearButton" onclick="clearText()">Clear Text</button> -->
-                </div>
+            </div>
             <div class="form-group">
-                <button type="submit">Submit</button>
+                <button id="submitButton" type="submit" >Submit</button>
             </div>
         </form>
-        <script src="inputPage.js"></script>
     </div>
-
-</body>
